@@ -1,19 +1,17 @@
-
 import mongoose, { Schema, model } from 'mongoose';
 
-type JobEntity = mongoose.Document
-interface ICategory {
+type CategoryEntity = mongoose.Document & {
   id: Number;
   name: String;
   patent_category_id: Number;
-}
+};
 
-const categorySchema = new Schema<ICategory>({
+const categorySchema = new Schema<CategoryEntity>({
   id: { type: Number, required: true, unique: true },
   name: { type: String, required: true },
   patent_category_id: { type: Number },
 });
 
-const Category = model<ICategory>('Category', categorySchema);
+const CategoryModel = model<CategoryEntity>('Category', categorySchema);
 
-export default Category;
+export default CategoryModel;

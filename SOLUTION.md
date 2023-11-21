@@ -16,4 +16,4 @@ if there is enough time, I will do:
 2. openApi doc 
 4. more unit tests
 5. move interface definition to seperate file
-6. refactor and create class for each service ( jobService, categoryService, suburbService)
+6. refactor and create class for each service ( jobService, categoryService, suburbService )

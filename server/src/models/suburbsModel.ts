@@ -1,12 +1,12 @@
-import { Schema, model } from 'mongoose';
+import mongoose, { Schema, model } from 'mongoose';
 
-interface ISuburb {
+type Suburb = mongoose.Document & {
   id: Number;
   name: String;
   postcode: String;
-}
+};
 
-const suburbSchema = new Schema<ISuburb>({
+const suburbSchema = new Schema<Suburb>({
   id: { type: Number, required: true, unique: true },
   name: {
     type: String,
@@ -16,5 +16,5 @@ const suburbSchema = new Schema<ISuburb>({
   postcode: { type: String, required: [true, 'Suburb must have postcode'] },
 });
 
-const Suburb = model<ISuburb>('Suburb', suburbSchema);
-export default Suburb;
+const SuburbModel = model<Suburb>('Suburb', suburbSchema);
+export default SuburbModel;

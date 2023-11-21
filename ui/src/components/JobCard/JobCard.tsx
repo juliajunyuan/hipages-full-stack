@@ -16,8 +16,8 @@ const JobCard = ({
   isPendingTab,
 }: {
   job: IJob;
-  onAcceptHandler?: (id: string) => void;
-  onDeclineHandler?: (id: string) => void;
+  onAcceptHandler?: (job: IJob) => void;
+  onDeclineHandler?: (job: IJob) => void;
   isPendingTab?: boolean;
 }) => {
   return (
@@ -44,8 +44,8 @@ const JobCard = ({
             <ListGroup.Item>
               <JobAction
                 price={job.price}
-                onAccept={() => onAcceptHandler(job.id)}
-                onDecline={() => onDeclineHandler(job.id)}
+                onAccept={() => onAcceptHandler(job)}
+                onDecline={() => onDeclineHandler(job)}
               />
             </ListGroup.Item>
           }

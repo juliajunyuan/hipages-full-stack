@@ -1,8 +1,8 @@
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import Suburb from '../models/suburbsModel';
+import SuburbModel from '../models/suburbsModel';
 import suburbs from './suburbs.json';
-import Category from '../models/categoriesModel';
+import CategoryModel from '../models/categoriesModel';
 import categories from './categories.json';
 import { JobModel} from '../models/jobModel';
 import jobs from './jobs.json';
