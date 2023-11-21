@@ -1,0 +1,15 @@
+.contact-detail {
+  color: rgb(247, 135, 16);
+  font-weight: bold;
+  padding-right: 16px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: rgb(247, 135, 16) !important;
+  text-decoration: none !important;
+  font-weight: none;
+}

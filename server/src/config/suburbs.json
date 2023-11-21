@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Sydney",
+    "postcode": "2000"
+  },
+  {
+    "id": 2,
+    "name": "Bondi",
+    "postcode": "2026"
+  },
+  {
+    "id": 3,
+    "name": "Manly",
+    "postcode": "2095"
+  },
+  {
+    "id": 4,
+    "name": "Surry Hills",
+    "postcode": "2010"
+  },
+  {
+    "id": 5,
+    "name": "Newtown",
+    "postcode": "2042"
+  }
+]
