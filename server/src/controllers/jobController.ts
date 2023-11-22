@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import { JobModel } from '../models/jobModel';
-import { getJobById } from '../services/job';
+import { getJobById } from '../services/jobService';
 const getAllJobs = async (req: Request, res: Response) => {
   try {
     const jobs = await JobModel.find();
@@ -15,7 +15,6 @@ const updateJobById = async (req: Request, res: Response) => {
   const { status: newStatus, id: jobId } = req.body;
   try {
     const job = await getJobById(jobId);
-    console.log("🚀 ~ file: jobController.ts:18 ~ updateJobById ~ job:", job)
     // TODO: add validation according to business logic before updating data
     // check if job exists
     if (!job) {
@@ -33,10 +32,11 @@ const updateJobById = async (req: Request, res: Response) => {
     }
     job.status = newStatus;
     await job.save();
+    const allJobs = await JobModel.find();
     res.status(201).send({
       status: 'success',
-      data: { job },
-    })
+      data: { allJobs },
+    });
   } catch (err) {
     throw err;
   }

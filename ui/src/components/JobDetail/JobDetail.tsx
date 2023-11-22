@@ -25,7 +25,7 @@ const JobDetail = ({
         <BiBriefcase /> {jobType}
       </Col>
       <Col>Job ID: {id}</Col>
-      {price && <Col>${price.toFixed(2)} Lead Invitation</Col>}
+      {Number(price) && <Col>${Number(price).toFixed(2)} Lead Invitation</Col>}
     </Row>
   );
 };

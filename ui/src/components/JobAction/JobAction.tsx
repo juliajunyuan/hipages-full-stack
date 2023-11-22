@@ -2,8 +2,15 @@ import React from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
 import './JobAction.css';
 
-interface IJobAction { price: number, onAccept: () => void, onDecline: () => void }
-const JobAction = ({ price, onAccept, onDecline }: IJobAction) => {
+const JobAction = ({
+  price,
+  onAccept,
+  onDecline,
+}: {
+  price: number;
+  onAccept: () => void;
+  onDecline: () => void;
+}) => {
   return (
     <Row xs='auto' className='m-1'>
       <Col>
@@ -25,8 +32,8 @@ const JobAction = ({ price, onAccept, onDecline }: IJobAction) => {
         </Button>
       </Col>
       <Col className='p-2'>
-        <span style={{ fontWeight: 'bold' }}>${price.toFixed(2)}</span> Lead
-        Invitation
+        <span style={{ fontWeight: 'bold' }}>${Number(price).toFixed(2)}</span>{' '}
+        Lead Invitation
       </Col>
     </Row>
   );

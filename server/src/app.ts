@@ -12,10 +12,8 @@ function createServer() {
     "<PASSWORD>",
     process.env.MONGO_PASSWORD
   );
-
   mongoose.connect(mongoDB, {}).then((con) => {
-    console.log("julia mongo db is running");
-    //console.log('connection',con.connection);
+    console.log("julia's mongo db is connected");
     //importData();
   });
   app.use(express.json());

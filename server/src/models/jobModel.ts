@@ -11,7 +11,7 @@ type JobEntity = mongoose.Document & {
   price: Number;
   description: String;
   created_at: Date;
-  updated_at: Date;
+  updated_at?: Date;
 }
 
 const jobSchema = new Schema<JobEntity>({

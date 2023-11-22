@@ -1,6 +1,7 @@
 import supertest from 'supertest';
-import { app } from '../src/index';
+import { app } from '../../src/index';
 
+jest.mock('mongoose')
 const request = supertest(app);
 
 describe('GET /api/v1', () => {

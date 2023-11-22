@@ -1,0 +1,25 @@
+[
+    {
+      "id": 1,
+      "suburb_id": 1,
+      "category_id": 1,
+      "contact_name": "contact 1",
+      "contact_phone": "number",
+      "contact_email": "test2@mailinator.com",
+      "price": 20,
+      "created_at": "2023-11-22T00:50:59.091Z",
+      "description": "fake description"
+    },
+    {
+      "id": 2,
+      "suburb_id": 2,
+      "category_id": 2,
+      "contact_name": "contact 2",
+      "contact_phone": "number 2",
+      "contact_email": "test2@mailinator.com",
+      "price": 30,
+      "created_at": "2023-11-23T00:50:59.091Z",
+      "description": "fake description"
+    }
+  ]
+  
