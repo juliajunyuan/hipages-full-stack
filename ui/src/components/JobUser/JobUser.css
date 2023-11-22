@@ -1,0 +1,22 @@
+.date-string {
+  font-size: smaller;
+}
+
+.circle {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(241,161,76);
+  border-radius: 50%;
+}
+
+.text {
+  margin: auto;
+  font-weight: bolder;
+  color: white;
+  font-size: x-large;
+}
+
+.user-name {
+    font-weight: bold;
+}

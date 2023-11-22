@@ -7,9 +7,21 @@
     "module": "commonjs",
     "sourceMap": true,
     "declaration": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "types": [
+      "jest",
+      "node"
+    ]
   },
   "include": [
-    "./src/**/*"
+    "src",
+    "src/*.ts",
+    "__tests__/**/*"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
