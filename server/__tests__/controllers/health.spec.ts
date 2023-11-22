@@ -1,7 +1,14 @@
 import supertest from 'supertest';
-import { app } from '../../src/index';
+import { MongoClient } from 'mongodb';
+import { MongoMemoryServer } from 'mongodb-memory-server';
+import app from '../../src/app';
 
-jest.mock('mongoose')
+const config = {
+  Memory: true,
+  IP: '127.0.0.1',
+  Port: '27017',
+  Database: 'mongoDB',
+};
 const request = supertest(app);
 
 describe('GET /api/v1', () => {

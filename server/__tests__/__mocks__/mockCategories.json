@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "category_test",
+    "patent_category_id": 5
+  },
+  {
+    "id": 4,
+    "name": "category_test",
+    "patent_category_id": 5
+  }
+]

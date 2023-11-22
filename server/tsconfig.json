@@ -8,13 +8,20 @@
     "sourceMap": true,
     "declaration": true,
     "experimentalDecorators": true,
-    "esModuleInterop":true,
+    "esModuleInterop": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "types": ["jest", "node"]
+    "types": [
+      "jest",
+      "node"
+    ]
   },
   "include": [
-    "src"
-, "__tests__"  ],
-  "exclude": ["node_modules"]
+    "src",
+    "src/*.ts",
+    "__tests__/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

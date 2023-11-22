@@ -4,6 +4,7 @@ const config: Config = {
   verbose: true,
   testEnvironment: 'node',
   testTimeout: 20000,
+  testPathIgnorePatterns: ['./dist']
 };
 
 export default config;
